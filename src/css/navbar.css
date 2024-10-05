@@ -1,0 +1,200 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px;
+    font-weight: 600;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    /* height: 3rem; */
+}
+.navbar button{
+    position: relative;
+    left: -2.5rem;
+}
+.theme-toggle + .navbar-link-linkedin{
+    margin-right: 1rem;
+}
+.theme-toggle{
+    position: relative;
+}
+.navbar-dark {
+    background-color: black;
+    color: white;
+}
+
+.navbar-light {
+    background-color: white;
+    color: black;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 20%;
+}
+
+.logo {
+    height: 40px; /* Adjust logo size */
+    width: 40px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Align list items to the right */
+    flex: 0 0 60%; /* ul takes 60% of the width */
+    /* background-color: red; */
+}
+
+.navbar-link {
+    text-decoration: none;
+    padding: 0 1rem; /* Spacing between links */
+    /* background-color: red; */
+}
+.navbar-link.active {
+    border-bottom: 2px solid #4493f8; /* Highlight effect */
+    font-weight: bold; /* Optional */
+    color: #4493f8; /* Match theme */
+}
+
+.link-dark {
+    color: white;
+}
+
+.link-light {
+    color: black;
+}
+.navbar-link-linkedin{
+    width: 24px; /* Icon size */
+    height: 24px; 
+    fill: currentColor; /* Use current color for SVG */
+    margin-left: -2rem; /* Space between text and icon */
+    transition: .3s all ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.theme-toggle {
+    /* margin: 10px auto; Center the button */
+    /* padding: 10px; Add padding for better touch targets */
+    border: none; /* Remove button border */
+    background: transparent; /* Make the button transparent */
+    cursor: pointer; /* Change cursor to pointer */
+    color: inherit; /* Ensure text color matches */
+}
+
+.theme-toggle:hover {
+    opacity: 0.8; /* Slight hover effect */
+}
+
+.toggle-dark {
+    color: white;
+}
+
+.toggle-light {
+    color: black;
+}
+
+/* Mobile styles */
+.menu-toggle {
+    display: none; /* Hidden on desktop */
+}
+/* Additional styles for dark mode */
+.navbar-dark .menu-toggle svg {
+    fill: white; /* Set SVG color to white in dark mode */
+}
+
+@media (max-width: 768px) {
+    .navbar-list {
+        display: block; /* Set to block for transition to work */
+        flex-direction: column; /* Stack items */
+        width: 100%; /* Full width */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        position: absolute; /* Positioning for dropdown */
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0; /* Align to the left */
+        /* background-color: white; Default background to white */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for dropdown effect */
+        z-index: 10; /* Ensure it's above other content */
+        max-height: 0; /* Start closed */
+        overflow: hidden; /* Hide overflow */
+        opacity: 0; /* Initially hidden */
+        transform: translateY(-20px); /* Move up */
+        transition: max-height 0.4s ease-in-out, opacity 0.3s ease, transform 0.4s ease-in-out; /* Add transitions */
+    }
+
+    .navbar-list.open {
+        max-height: 300px; /* Adjust max-height as needed */
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move back to original position */
+    }
+
+    .navbar-dark .navbar-list.open {
+        background-color: #0d1117; /* Dark mode background */
+        color: #f0f6fc; /* Change text color in dark mode */
+        margin-top: 20px;
+        box-shadow:  0px 5px 8px    ;
+    }
+    
+    .navbar-light .navbar-list.open {
+        background-color: white; /* Light mode background */
+        color: black; /* Change text color in light mode */
+        margin-top: 20px;
+    }
+
+    .navbar-list li {
+        padding: 10px 20px; /* Spacing for items */
+        /* text-align: center; Center items */
+        width: 100%; /* Full width for list items */
+        /* margin-left: 2rem; */
+    }
+
+    .navbar-link {
+        color: inherit; /* Ensure the link color matches the list's color */
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+    .navbar-link:hover {
+        color: #4493f8; /* Change link color on hover */
+    }
+
+    .theme-toggle {
+        display: block;
+        margin: 10px auto; 
+        padding: 10px; 
+        border: none;
+        background: transparent;  
+        cursor: pointer;  
+        color: inherit;  
+        /* background-color: red; */
+  
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle on mobile */
+        background: transparent; /* Make the button transparent */
+        border: none; /* Remove button border */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+
+    .menu-toggle svg {
+        width: 24px; /* Adjust icon size */
+        height: 24px; /* Adjust icon size */
+        fill: currentColor; /* Use current color for SVG */
+    }
+}
+
+
+
