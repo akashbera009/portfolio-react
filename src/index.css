@@ -1,14 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
-    /* color: rgba(255, 255, 255, 0.87); */
-    background-color: #0d1117;
-    /* background-color: #0d1117; */
-    color: #333333;
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #0d1117;
+  /* background-color: #0d1117; */
+  color: #333333;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,60 +17,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-/* button{
-  color: #9198a1 ;
-  background-color: #212830;
-  width: 5rem;
-  border-radius: 1rem;
-  outline: none;
-}
-.but2{
-  background-color: #238636;
-  color: white;
-} */
- a{
+a {
   color: #0077cc;
- }
-/* button{
-  color: #9198a1 ;
-  background-color:  #e7e7e7;
-  width: 5rem;
-  border-radius: 1rem;
-  outline: none;
-} */
-.but2{
+}
+
+.but2 {
   background-color: #238636;
   background-color: #007bff;
   color: white;
-  &:hover{
+
+  &:hover {
     background-color: #0056b3;
   }
 }
 
 
 html {
-  overflow-y: scroll; /* Force scrollbar to be visible */
+  overflow-y: scroll;
+  /* Force scrollbar to be visible */
 }
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 10px;
+  /* Width of the scrollbar */
 }
 
 /* Track (the background) */
 ::-webkit-scrollbar-track {
-  background: #1e1e1e; /* Dark background */
+  background: #1e1e1e;
+  /* Dark background */
   border-radius: 10px;
 }
 
 /* Handle (the draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(145deg,#3a3c54, #2d3250);
+  background: linear-gradient(145deg, #3a3c54, #2d3250);
   border-radius: 10px;
   transition: 1s all;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg,#3a3c54, #2d3250);
+  background: linear-gradient(45deg, #3a3c54, #2d3250);
 }
