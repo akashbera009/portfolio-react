@@ -1,0 +1,39 @@
+.trait-card-wrapper {
+    width: 100%;
+    max-width: 300px;
+}
+
+.trait-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    border-left: 4px solid var(--accent-glow) !important;
+}
+
+.trait-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.trait-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--text-primary);
+}
+
+.trait-professional {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.trait-human {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--accent-glow);
+    opacity: 0.8;
+    margin: 0;
+}

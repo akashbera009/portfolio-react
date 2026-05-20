@@ -18,3 +18,13 @@ export const darkTheme = {
 
 social icon :
 https://uiverse.io/imtausef/fuzzy-dragon-2
+
+https://leharsindra.framer.website/#about-me
+
+  9 tasks (6 done, 3 open)                                                                                                               
+  ◻ Redesign Experience/Hackathon Sections                                                                                               
+  ◻ Polish Contact Section                                                                                                               
+  ◻ Final Cleanup & Refactor                                                                                                             
+  ✔ Implement Theme System                                                                                                               
+  ✔ Implement Shared Card System                                                                                                         
+   … +4 completed   
