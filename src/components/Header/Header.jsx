@@ -5,7 +5,7 @@ const variants = {
   closed: { opacity: 0, x: "-100%" },
 }
 
-export const MyComponent = () => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (

@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './modal.css';
-import ImageSlideshow from '../SupportingComonent/ImageSlideShow';
+import ImageSlideshow from '../ImageSlideShow/ImageSlideShow';
 
 const Modal = ({ isOpen, onClose, project }) => {
   if (!isOpen) return null;
