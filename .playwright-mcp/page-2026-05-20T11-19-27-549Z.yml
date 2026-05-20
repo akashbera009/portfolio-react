@@ -1,0 +1,648 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e8]:
+        - paragraph [ref=e12]: Hello Beautiful People
+        - generic [ref=e17]:
+          - paragraph [ref=e19]: I’m Lehar
+          - paragraph [ref=e23]: ", a wave of design, empathy and just the right amount of chaos."
+      - link "Scroll to know more" [ref=e24] [cursor=pointer]:
+        - /url: ./#about-me
+        - paragraph [ref=e27]: Scroll to know more
+        - img [ref=e30]
+    - generic [ref=e32]:
+      - generic [ref=e37]:
+        - generic [ref=e61]:
+          - img [ref=e64]
+          - paragraph [ref=e70]: Lehar Sindra
+        - img [ref=e74]
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e80]:
+            - paragraph [ref=e81]: Product
+            - paragraph [ref=e82]: Designer
+          - generic [ref=e83]:
+            - img [ref=e87]
+            - paragraph [ref=e91]: "4"
+        - paragraph [ref=e96]: I am always curious about uncovering Why & Hows of a problem before I design solutions. A good observer with an eye for detail, I craft UI that's not just trendy, but also practical, scalable, and delightful to use.
+    - generic [ref=e100]:
+      - img [ref=e104]
+      - generic [ref=e107]:
+        - paragraph [ref=e108]: How I am as
+        - paragraph [ref=e109]: A Designer
+      - list [ref=e112]:
+        - listitem [ref=e113]:
+          - generic [ref=e114]:
+            - img [ref=e117]
+            - img [ref=e121]
+            - generic [ref=e125]:
+              - paragraph [ref=e127]: Well Organized
+              - paragraph [ref=e129]:
+                - text: Actually a Designer OCD. Just to make everything in my way, perfect!!
+                - text: Like Monica (FRIENDS) hah! I knowwwww!
+            - img [ref=e133]
+            - generic [ref=e138]:
+              - paragraph [ref=e139]: Not just perfect,
+              - paragraph [ref=e140]: Monica perfectt!
+        - listitem [ref=e141]:
+          - generic [ref=e142]:
+            - img [ref=e145]
+            - img [ref=e149]
+            - generic [ref=e153]:
+              - paragraph [ref=e155]: Empathetic Listener
+              - generic [ref=e156]:
+                - paragraph [ref=e157]: Oh, I’m really great at this, clients just love how well I listen and this helps me to empathise
+                - paragraph [ref=e158]: with them to get what they want.
+            - img [ref=e161]
+            - paragraph [ref=e167]:
+              - text: Yeah,
+              - text: I'm listening
+        - listitem [ref=e169]:
+          - generic [ref=e170]:
+            - img [ref=e173]
+            - img [ref=e177]
+            - generic [ref=e181]:
+              - paragraph [ref=e183]: Problem Solver
+              - generic [ref=e184]:
+                - paragraph [ref=e185]: Before I call something a 'problem,' I always
+                - paragraph [ref=e186]: ask myself—does this really need a solution? That curiosity helps me find a better one when it turns out to be a real issue.
+            - img [ref=e189]
+            - paragraph [ref=e195]:
+              - text: Solving problem,
+              - text: Oh solved it!
+        - listitem [ref=e197]:
+          - generic [ref=e198]:
+            - img [ref=e201]
+            - img [ref=e205]
+            - generic [ref=e209]:
+              - paragraph [ref=e211]: Calm & Compose
+              - generic [ref=e212]:
+                - paragraph [ref=e213]: Only name is Lehar but I flow
+                - paragraph [ref=e214]: silently.
+            - img [ref=e217]
+            - paragraph [ref=e223]: I bring peace
+        - listitem [ref=e224]:
+          - generic [ref=e225]:
+            - img [ref=e228]
+            - img [ref=e232]
+            - generic [ref=e236]:
+              - paragraph [ref=e238]: Detailed-Oriented
+              - paragraph [ref=e240]: because that on flow gap always give a headache.
+            - img [ref=e243]
+            - paragraph [ref=e249]: After 52 attempts, now all details are covered.
+        - listitem [ref=e250]:
+          - generic [ref=e251]:
+            - img [ref=e254]
+            - img [ref=e258]
+            - generic [ref=e262]:
+              - paragraph [ref=e264]: UX Researcher
+              - paragraph [ref=e266]: I always love to dig deep to truly understand the core of the requirement.
+            - img [ref=e269]
+            - paragraph [ref=e275]: I Want to know everything.
+        - listitem [ref=e276]:
+          - generic [ref=e277]:
+            - img [ref=e280]
+            - img [ref=e284]
+            - generic [ref=e288]:
+              - paragraph [ref=e290]: Well Organized
+              - paragraph [ref=e292]:
+                - text: Actually a Designer OCD. Just to make everything in my way, perfect!!
+                - text: Like Monica (FRIENDS) hah! I knowwwww!
+            - img [ref=e296]
+            - generic [ref=e301]:
+              - paragraph [ref=e302]: Not just perfect,
+              - paragraph [ref=e303]: Monica perfectt!
+        - listitem [ref=e304]:
+          - generic [ref=e305]:
+            - img [ref=e308]
+            - img [ref=e312]
+            - generic [ref=e316]:
+              - paragraph [ref=e318]: Empathetic Listener
+              - generic [ref=e319]:
+                - paragraph [ref=e320]: Oh, I’m really great at this, clients just love how well I listen and this helps me to empathise
+                - paragraph [ref=e321]: with them to get what they want.
+            - img [ref=e324]
+            - paragraph [ref=e330]:
+              - text: Yeah,
+              - text: I'm listening
+        - listitem [ref=e332]:
+          - generic [ref=e333]:
+            - img [ref=e336]
+            - img [ref=e340]
+            - generic [ref=e344]:
+              - paragraph [ref=e346]: Problem Solver
+              - generic [ref=e347]:
+                - paragraph [ref=e348]: Before I call something a 'problem,' I always
+                - paragraph [ref=e349]: ask myself—does this really need a solution? That curiosity helps me find a better one when it turns out to be a real issue.
+            - img [ref=e352]
+            - paragraph [ref=e358]:
+              - text: Solving problem,
+              - text: Oh solved it!
+        - listitem [ref=e360]:
+          - generic [ref=e361]:
+            - img [ref=e364]
+            - img [ref=e368]
+            - generic [ref=e372]:
+              - paragraph [ref=e374]: Calm & Compose
+              - generic [ref=e375]:
+                - paragraph [ref=e376]: Only name is Lehar but I flow
+                - paragraph [ref=e377]: silently.
+            - img [ref=e380]
+            - paragraph [ref=e386]: I bring peace
+        - listitem [ref=e387]:
+          - generic [ref=e388]:
+            - img [ref=e391]
+            - img [ref=e395]
+            - generic [ref=e399]:
+              - paragraph [ref=e401]: Detailed-Oriented
+              - paragraph [ref=e403]: because that on flow gap always give a headache.
+            - img [ref=e406]
+            - paragraph [ref=e412]: After 52 attempts, now all details are covered.
+        - listitem [ref=e413]:
+          - generic [ref=e414]:
+            - img [ref=e417]
+            - img [ref=e421]
+            - generic [ref=e425]:
+              - paragraph [ref=e427]: UX Researcher
+              - paragraph [ref=e429]: I always love to dig deep to truly understand the core of the requirement.
+            - img [ref=e432]
+            - paragraph [ref=e438]: I Want to know everything.
+        - listitem [ref=e439]:
+          - generic [ref=e440]:
+            - img [ref=e443]
+            - img [ref=e447]
+            - generic [ref=e451]:
+              - paragraph [ref=e453]: Well Organized
+              - paragraph [ref=e455]:
+                - text: Actually a Designer OCD. Just to make everything in my way, perfect!!
+                - text: Like Monica (FRIENDS) hah! I knowwwww!
+            - img [ref=e459]
+            - generic [ref=e464]:
+              - paragraph [ref=e465]: Not just perfect,
+              - paragraph [ref=e466]: Monica perfectt!
+        - listitem [ref=e467]:
+          - generic [ref=e468]:
+            - img [ref=e471]
+            - img [ref=e475]
+            - generic [ref=e479]:
+              - paragraph [ref=e481]: Empathetic Listener
+              - generic [ref=e482]:
+                - paragraph [ref=e483]: Oh, I’m really great at this, clients just love how well I listen and this helps me to empathise
+                - paragraph [ref=e484]: with them to get what they want.
+            - img [ref=e487]
+            - paragraph [ref=e493]:
+              - text: Yeah,
+              - text: I'm listening
+        - listitem [ref=e495]:
+          - generic [ref=e496]:
+            - img [ref=e499]
+            - img [ref=e503]
+            - generic [ref=e507]:
+              - paragraph [ref=e509]: Problem Solver
+              - generic [ref=e510]:
+                - paragraph [ref=e511]: Before I call something a 'problem,' I always
+                - paragraph [ref=e512]: ask myself—does this really need a solution? That curiosity helps me find a better one when it turns out to be a real issue.
+            - img [ref=e515]
+            - paragraph [ref=e521]:
+              - text: Solving problem,
+              - text: Oh solved it!
+        - listitem [ref=e523]:
+          - generic [ref=e524]:
+            - img [ref=e527]
+            - img [ref=e531]
+            - generic [ref=e535]:
+              - paragraph [ref=e537]: Calm & Compose
+              - generic [ref=e538]:
+                - paragraph [ref=e539]: Only name is Lehar but I flow
+                - paragraph [ref=e540]: silently.
+            - img [ref=e543]
+            - paragraph [ref=e549]: I bring peace
+        - listitem [ref=e550]:
+          - generic [ref=e551]:
+            - img [ref=e554]
+            - img [ref=e558]
+            - generic [ref=e562]:
+              - paragraph [ref=e564]: Detailed-Oriented
+              - paragraph [ref=e566]: because that on flow gap always give a headache.
+            - img [ref=e569]
+            - paragraph [ref=e575]: After 52 attempts, now all details are covered.
+        - listitem [ref=e576]:
+          - generic [ref=e577]:
+            - img [ref=e580]
+            - img [ref=e584]
+            - generic [ref=e588]:
+              - paragraph [ref=e590]: UX Researcher
+              - paragraph [ref=e592]: I always love to dig deep to truly understand the core of the requirement.
+            - img [ref=e595]
+            - paragraph [ref=e601]: I Want to know everything.
+    - generic [ref=e602]:
+      - generic [ref=e603]:
+        - paragraph [ref=e605]: Featured Projects
+        - paragraph [ref=e607]: I bring out the best in me to help you clearly understand my work process
+      - generic [ref=e608]:
+        - 'link "Mobile App Design Personal Project Book a trustable boarding for your pet next time you plan to go away for a while. Timeline: 1 month (2023) View Project" [ref=e609] [cursor=pointer]':
+          - /url: https://www.behance.net/gallery/169247723/Snuggly-Pet-boarding-app
+          - generic [ref=e613]:
+            - generic [ref=e614]:
+              - paragraph [ref=e617]: Mobile App Design
+              - paragraph [ref=e620]: Personal Project
+            - paragraph [ref=e624]: Book a trustable boarding for your pet next time you plan to go away for a while.
+            - paragraph [ref=e626]: "Timeline: 1 month (2023)"
+          - link "View Project" [ref=e629]:
+            - paragraph [ref=e631]: View Project
+            - img [ref=e634]
+        - 'link "Mobile App Design Where AI integration helps the recruiter to find the right talent for their restaurants in the US located. Timeline: 2 months (2025) View Project" [ref=e636] [cursor=pointer]':
+          - /url: https://www.figma.com/proto/JMgVaU0tMLqwR0wPdtj2rl/Zenvio.ai?page-id=0%3A1&node-id=4002-22&viewport=440%2C44%2C0.31&t=CDvVV1l72V7ecM5K-1&scaling=contain&content-scaling=fixed
+          - generic [ref=e642]:
+            - paragraph [ref=e646]: Mobile App Design
+            - img [ref=e651]
+            - paragraph [ref=e654]: Where AI integration helps the recruiter to find the right talent for their restaurants in the US located.
+            - paragraph [ref=e656]: "Timeline: 2 months (2025)"
+          - link "View Project" [ref=e659]:
+            - paragraph [ref=e661]: View Project
+            - img [ref=e664]
+        - 'link "Web & Mobile App Design Connect 1:1 with top industries'' top experts to seek advice and consultation. Timeline: 1 month (2024) View Project" [ref=e666] [cursor=pointer]':
+          - /url: https://www.behance.net/gallery/203317893/Superconnects-Landing-Page-Web-App
+          - generic [ref=e670]:
+            - paragraph [ref=e673]: Web & Mobile App Design
+            - paragraph [ref=e677]: Connect 1:1 with top industries' top experts to seek advice and consultation.
+            - paragraph [ref=e679]: "Timeline: 1 month (2024)"
+          - link "View Project" [ref=e682]:
+            - paragraph [ref=e684]: View Project
+            - img [ref=e687]
+        - 'link "Web & Mobile App Design Redeem all the exclusive benefits for your next fly trip by adding your card. Timeline: 3 days (2024) View Project" [ref=e689] [cursor=pointer]':
+          - /url: https://www.behance.net/gallery/227768725/FlyPerks-Unlock-Travel-Perks-with-Your-Cards
+          - generic [ref=e693]:
+            - paragraph [ref=e697]: Web & Mobile App Design
+            - generic [ref=e698]:
+              - img [ref=e701]
+              - img [ref=e705]
+            - paragraph [ref=e708]: Redeem all the exclusive benefits for your next fly trip by adding your card.
+            - paragraph [ref=e710]: "Timeline: 3 days (2024)"
+          - link "View Project" [ref=e713]:
+            - paragraph [ref=e715]: View Project
+            - img [ref=e718]
+        - generic [ref=e720]:
+          - generic [ref=e724]:
+            - paragraph [ref=e727]: Web Design
+            - paragraph [ref=e731]: Effortless payment collection, orchestration, corporate cards, and vendor payments all within one platform.
+            - paragraph [ref=e733]: "Timeline: 2 months (2024)"
+          - paragraph [ref=e738]: Under Progress
+        - 'link "All Platform Design Buy apparel for your next trip from an emerging designer and get delivery straight to your hotel room in your closet. Timeline: 2 months (2024) View Project" [ref=e739] [cursor=pointer]':
+          - /url: https://www.figma.com/design/IQiLVqA5bPCO2sNwoTiT82/Wanderobe-Design-File?node-id=166-385&t=lmtNOP34yUSXeUnr-1
+          - generic [ref=e742]:
+            - paragraph [ref=e745]: All Platform Design
+            - img [ref=e749]
+            - paragraph [ref=e753]: Buy apparel for your next trip from an emerging designer and get delivery straight to your hotel room in your closet.
+            - paragraph [ref=e755]: "Timeline: 2 months (2024)"
+          - link "View Project" [ref=e758]:
+            - paragraph [ref=e760]: View Project
+            - img [ref=e763]
+    - generic [ref=e766]:
+      - paragraph [ref=e768]: Blogs Written by Me
+      - link "Designing for the Metaverse in UI/UX d i a n a p p s . c o m" [ref=e769] [cursor=pointer]:
+        - /url: https://dianapps.com/blog/designing-for-the-metaverse-in-uiux/
+        - generic [ref=e772]:
+          - paragraph [ref=e774]: Designing for the Metaverse in UI/UX
+          - paragraph [ref=e779]:
+            - generic [ref=e780]:
+              - generic [ref=e781]: d
+              - generic [ref=e782]: i
+              - generic [ref=e783]: a
+              - generic [ref=e784]: "n"
+              - generic [ref=e785]: a
+              - generic [ref=e786]: p
+              - generic [ref=e787]: p
+              - generic [ref=e788]: s
+              - generic [ref=e789]: .
+              - generic [ref=e790]: c
+              - generic [ref=e791]: o
+              - generic [ref=e792]: m
+      - link "UI/UX Tips to Enhance your Product Design l i n k . m e d i u m . c o m" [ref=e793] [cursor=pointer]:
+        - /url: https://medium.com/@dianappstechnology/ui-ux-tips-to-enhance-your-product-design-79bce46bad43
+        - generic [ref=e796]:
+          - paragraph [ref=e799]: UI/UX Tips to Enhance your Product Design
+          - paragraph [ref=e804]:
+            - generic [ref=e805]:
+              - generic [ref=e806]: l
+              - generic [ref=e807]: i
+              - generic [ref=e808]: "n"
+              - generic [ref=e809]: k
+              - generic [ref=e810]: .
+              - generic [ref=e811]: m
+              - generic [ref=e812]: e
+              - generic [ref=e813]: d
+              - generic [ref=e814]: i
+              - generic [ref=e815]: u
+              - generic [ref=e816]: m
+              - generic [ref=e817]: .
+              - generic [ref=e818]: c
+              - generic [ref=e819]: o
+              - generic [ref=e820]: m
+      - link "How Neubrutalism is Redefining Modern UI Design? l i n k . m e d i u m . c o m" [ref=e821] [cursor=pointer]:
+        - /url: https://medium.com/@dianappstechnology/how-neubrutalism-is-redefining-modern-ui-design-f69ce774048f
+        - generic [ref=e824]:
+          - paragraph [ref=e827]: How Neubrutalism is Redefining Modern UI Design?
+          - paragraph [ref=e832]:
+            - generic [ref=e833]:
+              - generic [ref=e834]: l
+              - generic [ref=e835]: i
+              - generic [ref=e836]: "n"
+              - generic [ref=e837]: k
+              - generic [ref=e838]: .
+              - generic [ref=e839]: m
+              - generic [ref=e840]: e
+              - generic [ref=e841]: d
+              - generic [ref=e842]: i
+              - generic [ref=e843]: u
+              - generic [ref=e844]: m
+              - generic [ref=e845]: .
+              - generic [ref=e846]: c
+              - generic [ref=e847]: o
+              - generic [ref=e848]: m
+      - link "Mastering the UI/UX Design Flow - From Conceptualization to Visual Excellence l i n k . m e d i u m . c o m" [ref=e849] [cursor=pointer]:
+        - /url: https://medium.com/@dianappstechnology/mastering-the-ui-ux-design-flow-from-conceptualization-to-visual-excellence-24550cb93c3e
+        - generic [ref=e852]:
+          - paragraph [ref=e855]: Mastering the UI/UX Design Flow - From Conceptualization to Visual Excellence
+          - paragraph [ref=e860]:
+            - generic [ref=e861]:
+              - generic [ref=e862]: l
+              - generic [ref=e863]: i
+              - generic [ref=e864]: "n"
+              - generic [ref=e865]: k
+              - generic [ref=e866]: .
+              - generic [ref=e867]: m
+              - generic [ref=e868]: e
+              - generic [ref=e869]: d
+              - generic [ref=e870]: i
+              - generic [ref=e871]: u
+              - generic [ref=e872]: m
+              - generic [ref=e873]: .
+              - generic [ref=e874]: c
+              - generic [ref=e875]: o
+              - generic [ref=e876]: m
+    - generic [ref=e877]:
+      - img [ref=e882]
+      - link [ref=e884] [cursor=pointer]:
+        - /url: ./#hero
+        - img [ref=e887]
+      - generic [ref=e889]:
+        - generic [ref=e890]:
+          - paragraph [ref=e894] [cursor=pointer]: About Me
+          - paragraph [ref=e898] [cursor=pointer]: Projects
+          - paragraph [ref=e902] [cursor=pointer]: Resume
+        - generic [ref=e903]:
+          - link [ref=e906] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/lehar-sindra/
+            - img [ref=e909]
+          - link [ref=e913] [cursor=pointer]:
+            - /url: https://www.behance.net/leharsindra
+    - generic [ref=e915]:
+      - generic [ref=e920]:
+        - paragraph [ref=e922]: Testimonials
+        - paragraph [ref=e924]: Not convinced by my words? See what these awesome people have to say instead.
+      - list [ref=e927]:
+        - listitem [ref=e928]:
+          - generic [ref=e929]:
+            - img [ref=e932]
+            - generic [ref=e938]:
+              - paragraph [ref=e940]: Amit Suthar
+              - paragraph [ref=e942]: Founder & Director, CodeKing
+            - link [ref=e944] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/amsuthar/
+              - img [ref=e947]
+            - paragraph [ref=e951]: “Lehar joined us as a fresher but quickly impressed with her creativity, adaptability, and ownership of design projects. Her attention to detail and collaborative spirit made a real impact on our team and product quality. I’m confident she will excel wherever she goes.”
+        - listitem [ref=e952]:
+          - generic [ref=e953]:
+            - img [ref=e956]
+            - generic [ref=e962]:
+              - paragraph [ref=e964]: Gaurav Nagpal
+              - paragraph [ref=e966]: Superconnects, CEO
+            - link [ref=e968] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/gnagpal/
+              - img [ref=e971]
+            - paragraph [ref=e975]: “I’ve really enjoyed working with Lehar. She brings a fresh perspective, thinks independently, and always delivers on time. She’s a self-learner who constantly improves her skills. You can count on her to bring both creativity and reliability to any project.”
+        - listitem [ref=e976]:
+          - generic [ref=e977]:
+            - img [ref=e980]
+            - generic [ref=e986]:
+              - paragraph [ref=e988]: Shweta Pandey
+              - paragraph [ref=e990]: Co-founder & Project Manager, Unity
+            - link [ref=e992] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/shweta-pandey-7533a226/
+              - img [ref=e995]
+            - paragraph [ref=e999]: “I worked with Lehar on Unity, a political social media app. She led the UI/UX design and brought a great sense of aesthetics to the project. She had a strong grasp of the product requirements and consistently offered valuable insights from the user’s perspective. Her designs reflected both clarity and purpose, and she handled everything from menus to interaction flows with thoughtfulness and creativity. It was great working with her.”
+        - listitem [ref=e1000]:
+          - generic [ref=e1001]:
+            - img [ref=e1004]
+            - generic [ref=e1010]:
+              - paragraph [ref=e1012]: Yashwant Verma
+              - paragraph [ref=e1014]: Product Lead, PropelGo
+            - link [ref=e1016] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/vermayashwant/
+              - img [ref=e1019]
+            - generic [ref=e1022]:
+              - paragraph [ref=e1023]: "\"Working with Lehar was fantastic. She was always available to brainstorm and solve the problem instead of just focusing on UI. She built everything from 0 to 1—from brand guidelines, design system, and logo to our full-fledged app and web versions."
+              - paragraph [ref=e1024]
+              - paragraph [ref=e1025]: What I loved about working with her is her strong business acumen and customer-focused mindset, which helped us move faster with fewer iterations. That’s super important for a startup like ours to ship quickly. We worked together on 3 projects."
+        - listitem [ref=e1026]:
+          - generic [ref=e1027]:
+            - img [ref=e1030]
+            - generic [ref=e1035]:
+              - paragraph [ref=e1037]: Rajeev Cherukuri
+              - paragraph [ref=e1039]: Chief Technology Officer, Unity
+            - paragraph [ref=e1042]: "\"I genuinely enjoyed working with Lehar. She is an amazing asset to any team. As the lead for end-to-end UI and UX design on Unity-Beheard, she consistently transformed ideas into intuitive and engaging interfaces. Her design leadership, proactive communication, and meticulous attention to detail ensured smooth collaboration and outstanding results for our team.\""
+        - listitem [ref=e1043]:
+          - generic [ref=e1044]:
+            - img [ref=e1047]
+            - generic [ref=e1053]:
+              - paragraph [ref=e1055]: Priya Koolwal
+              - paragraph [ref=e1057]: Project Co-ordinator, Co-worker
+            - link [ref=e1059] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/priya-koolwal/
+              - img [ref=e1062]
+            - paragraph [ref=e1066]: “Lehar has a beautiful way of turning feedback into opportunity. Her gentle confidence, openness to learning, and genuine care for her work and teammates made her an absolute joy to have on the team. Wishing her continued success 🍀 throughout her life.”
+        - listitem [ref=e1067]:
+          - generic [ref=e1068]:
+            - img [ref=e1071]
+            - generic [ref=e1077]:
+              - paragraph [ref=e1079]: Mayank Jain
+              - paragraph [ref=e1081]: Sr. Developer, Co-worker
+            - link [ref=e1083] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/mayank-jain-10-/
+              - img [ref=e1086]
+            - paragraph [ref=e1090]: “Lehar is one of the most well-rounded and thoughtful designers I’ve worked with. She blends strategic thinking, creativity, and user empathy seamlessly—always stepping into the user’s mindset to design experiences that truly resonate. Her calm, detail-oriented approach, strong work ethic, and never-give-up attitude consistently raise the quality of any project.”
+        - listitem [ref=e1091]:
+          - generic [ref=e1092]:
+            - img [ref=e1095]
+            - generic [ref=e1101]:
+              - paragraph [ref=e1103]: Amit Suthar
+              - paragraph [ref=e1105]: Founder & Director, CodeKing
+            - link [ref=e1107] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/amsuthar/
+              - img [ref=e1110]
+            - paragraph [ref=e1114]: “Lehar joined us as a fresher but quickly impressed with her creativity, adaptability, and ownership of design projects. Her attention to detail and collaborative spirit made a real impact on our team and product quality. I’m confident she will excel wherever she goes.”
+        - listitem [ref=e1115]:
+          - generic [ref=e1116]:
+            - img [ref=e1119]
+            - generic [ref=e1125]:
+              - paragraph [ref=e1127]: Gaurav Nagpal
+              - paragraph [ref=e1129]: Superconnects, CEO
+            - link [ref=e1131] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/gnagpal/
+              - img [ref=e1134]
+            - paragraph [ref=e1138]: “I’ve really enjoyed working with Lehar. She brings a fresh perspective, thinks independently, and always delivers on time. She’s a self-learner who constantly improves her skills. You can count on her to bring both creativity and reliability to any project.”
+        - listitem [ref=e1139]:
+          - generic [ref=e1140]:
+            - img [ref=e1143]
+            - generic [ref=e1149]:
+              - paragraph [ref=e1151]: Shweta Pandey
+              - paragraph [ref=e1153]: Co-founder & Project Manager, Unity
+            - link [ref=e1155] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/shweta-pandey-7533a226/
+              - img [ref=e1158]
+            - paragraph [ref=e1162]: “I worked with Lehar on Unity, a political social media app. She led the UI/UX design and brought a great sense of aesthetics to the project. She had a strong grasp of the product requirements and consistently offered valuable insights from the user’s perspective. Her designs reflected both clarity and purpose, and she handled everything from menus to interaction flows with thoughtfulness and creativity. It was great working with her.”
+        - listitem [ref=e1163]:
+          - generic [ref=e1164]:
+            - img [ref=e1167]
+            - generic [ref=e1173]:
+              - paragraph [ref=e1175]: Yashwant Verma
+              - paragraph [ref=e1177]: Product Lead, PropelGo
+            - link [ref=e1179] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/vermayashwant/
+              - img [ref=e1182]
+            - generic [ref=e1185]:
+              - paragraph [ref=e1186]: "\"Working with Lehar was fantastic. She was always available to brainstorm and solve the problem instead of just focusing on UI. She built everything from 0 to 1—from brand guidelines, design system, and logo to our full-fledged app and web versions."
+              - paragraph [ref=e1187]
+              - paragraph [ref=e1188]: What I loved about working with her is her strong business acumen and customer-focused mindset, which helped us move faster with fewer iterations. That’s super important for a startup like ours to ship quickly. We worked together on 3 projects."
+        - listitem [ref=e1189]:
+          - generic [ref=e1190]:
+            - img [ref=e1193]
+            - generic [ref=e1198]:
+              - paragraph [ref=e1200]: Rajeev Cherukuri
+              - paragraph [ref=e1202]: Chief Technology Officer, Unity
+            - paragraph [ref=e1205]: "\"I genuinely enjoyed working with Lehar. She is an amazing asset to any team. As the lead for end-to-end UI and UX design on Unity-Beheard, she consistently transformed ideas into intuitive and engaging interfaces. Her design leadership, proactive communication, and meticulous attention to detail ensured smooth collaboration and outstanding results for our team.\""
+        - listitem [ref=e1206]:
+          - generic [ref=e1207]:
+            - img [ref=e1210]
+            - generic [ref=e1216]:
+              - paragraph [ref=e1218]: Priya Koolwal
+              - paragraph [ref=e1220]: Project Co-ordinator, Co-worker
+            - link [ref=e1222] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/priya-koolwal/
+              - img [ref=e1225]
+            - paragraph [ref=e1229]: “Lehar has a beautiful way of turning feedback into opportunity. Her gentle confidence, openness to learning, and genuine care for her work and teammates made her an absolute joy to have on the team. Wishing her continued success 🍀 throughout her life.”
+        - listitem [ref=e1230]:
+          - generic [ref=e1231]:
+            - img [ref=e1234]
+            - generic [ref=e1240]:
+              - paragraph [ref=e1242]: Mayank Jain
+              - paragraph [ref=e1244]: Sr. Developer, Co-worker
+            - link [ref=e1246] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/mayank-jain-10-/
+              - img [ref=e1249]
+            - paragraph [ref=e1253]: “Lehar is one of the most well-rounded and thoughtful designers I’ve worked with. She blends strategic thinking, creativity, and user empathy seamlessly—always stepping into the user’s mindset to design experiences that truly resonate. Her calm, detail-oriented approach, strong work ethic, and never-give-up attitude consistently raise the quality of any project.”
+        - listitem [ref=e1254]:
+          - generic [ref=e1255]:
+            - img [ref=e1258]
+            - generic [ref=e1264]:
+              - paragraph [ref=e1266]: Amit Suthar
+              - paragraph [ref=e1268]: Founder & Director, CodeKing
+            - link [ref=e1270] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/amsuthar/
+              - img [ref=e1273]
+            - paragraph [ref=e1277]: “Lehar joined us as a fresher but quickly impressed with her creativity, adaptability, and ownership of design projects. Her attention to detail and collaborative spirit made a real impact on our team and product quality. I’m confident she will excel wherever she goes.”
+        - listitem [ref=e1278]:
+          - generic [ref=e1279]:
+            - img [ref=e1282]
+            - generic [ref=e1288]:
+              - paragraph [ref=e1290]: Gaurav Nagpal
+              - paragraph [ref=e1292]: Superconnects, CEO
+            - link [ref=e1294] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/gnagpal/
+              - img [ref=e1297]
+            - paragraph [ref=e1301]: “I’ve really enjoyed working with Lehar. She brings a fresh perspective, thinks independently, and always delivers on time. She’s a self-learner who constantly improves her skills. You can count on her to bring both creativity and reliability to any project.”
+        - listitem [ref=e1302]:
+          - generic [ref=e1303]:
+            - img [ref=e1306]
+            - generic [ref=e1312]:
+              - paragraph [ref=e1314]: Shweta Pandey
+              - paragraph [ref=e1316]: Co-founder & Project Manager, Unity
+            - link [ref=e1318] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/shweta-pandey-7533a226/
+              - img [ref=e1321]
+            - paragraph [ref=e1325]: “I worked with Lehar on Unity, a political social media app. She led the UI/UX design and brought a great sense of aesthetics to the project. She had a strong grasp of the product requirements and consistently offered valuable insights from the user’s perspective. Her designs reflected both clarity and purpose, and she handled everything from menus to interaction flows with thoughtfulness and creativity. It was great working with her.”
+        - listitem [ref=e1326]:
+          - generic [ref=e1327]:
+            - img [ref=e1330]
+            - generic [ref=e1336]:
+              - paragraph [ref=e1338]: Yashwant Verma
+              - paragraph [ref=e1340]: Product Lead, PropelGo
+            - link [ref=e1342] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/vermayashwant/
+              - img [ref=e1345]
+            - generic [ref=e1348]:
+              - paragraph [ref=e1349]: "\"Working with Lehar was fantastic. She was always available to brainstorm and solve the problem instead of just focusing on UI. She built everything from 0 to 1—from brand guidelines, design system, and logo to our full-fledged app and web versions."
+              - paragraph [ref=e1350]
+              - paragraph [ref=e1351]: What I loved about working with her is her strong business acumen and customer-focused mindset, which helped us move faster with fewer iterations. That’s super important for a startup like ours to ship quickly. We worked together on 3 projects."
+        - listitem [ref=e1352]:
+          - generic [ref=e1353]:
+            - img [ref=e1356]
+            - generic [ref=e1361]:
+              - paragraph [ref=e1363]: Rajeev Cherukuri
+              - paragraph [ref=e1365]: Chief Technology Officer, Unity
+            - paragraph [ref=e1368]: "\"I genuinely enjoyed working with Lehar. She is an amazing asset to any team. As the lead for end-to-end UI and UX design on Unity-Beheard, she consistently transformed ideas into intuitive and engaging interfaces. Her design leadership, proactive communication, and meticulous attention to detail ensured smooth collaboration and outstanding results for our team.\""
+        - listitem [ref=e1369]:
+          - generic [ref=e1370]:
+            - img [ref=e1373]
+            - generic [ref=e1379]:
+              - paragraph [ref=e1381]: Priya Koolwal
+              - paragraph [ref=e1383]: Project Co-ordinator, Co-worker
+            - link [ref=e1385] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/priya-koolwal/
+              - img [ref=e1388]
+            - paragraph [ref=e1392]: “Lehar has a beautiful way of turning feedback into opportunity. Her gentle confidence, openness to learning, and genuine care for her work and teammates made her an absolute joy to have on the team. Wishing her continued success 🍀 throughout her life.”
+        - listitem [ref=e1393]:
+          - generic [ref=e1394]:
+            - img [ref=e1397]
+            - generic [ref=e1403]:
+              - paragraph [ref=e1405]: Mayank Jain
+              - paragraph [ref=e1407]: Sr. Developer, Co-worker
+            - link [ref=e1409] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/mayank-jain-10-/
+              - img [ref=e1412]
+            - paragraph [ref=e1416]: “Lehar is one of the most well-rounded and thoughtful designers I’ve worked with. She blends strategic thinking, creativity, and user empathy seamlessly—always stepping into the user’s mindset to design experiences that truly resonate. Her calm, detail-oriented approach, strong work ethic, and never-give-up attitude consistently raise the quality of any project.”
+    - generic [ref=e1417]:
+      - generic [ref=e1418]:
+        - link "Connect With Me" [ref=e1424] [cursor=pointer]:
+          - /url: mailto:leharsindra117@gmail.com
+          - paragraph [ref=e1426]: Connect With Me
+        - paragraph [ref=e1429]: Have a project idea? Let’s talk about it!
+      - generic [ref=e1430]:
+        - paragraph [ref=e1433]: Lehar Sindra
+        - generic [ref=e1434]:
+          - link [ref=e1437] [cursor=pointer]:
+            - /url: https://www.behance.net/leharsindra
+          - link [ref=e1441] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/lehar-sindra/
+            - img [ref=e1444]
+          - link [ref=e1448] [cursor=pointer]:
+            - /url: https://dribbble.com/Lehar_Sindra
+            - img [ref=e1451]
+      - link [ref=e1455] [cursor=pointer]:
+        - /url: https://www.behance.net/leharsindra
+      - paragraph [ref=e1459]: 2026 Design by Lehar
+      - paragraph [ref=e1462]: Made with love ❤️
+  - link "Create a free website with Framer, the website builder loved by startups, designers and agencies." [ref=e1463] [cursor=pointer]:
+    - /url: https://www.framer.com
+    - paragraph [ref=e1468]: Create a free website with Framer, the website builder loved by startups, designers and agencies.
+  - img [ref=e1470]
+  - img [ref=e1474]
+  - img [ref=e1477]
+  - img [ref=e1509]
+  - img [ref=e1512]
+  - img [ref=e1517]
+  - img [ref=e1571]
+  - img [ref=e1575]
+  - img [ref=e1577]
+  - img [ref=e1580]
