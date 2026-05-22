@@ -19,9 +19,12 @@ export const educationData = [
         title: "University of Engineering & Management, Jaipur",
         mobile_title: ["University of Engineering ", "& Management, Jaipur"],
         year: "2022-2026",
-        result: "CGPA : 8.9",
+        result: "CGPA :",
         type: "college",
-        position: { desktop: "translate(700, 100)", mobile: "translate(80, 375)" }
+        position: { desktop: "translate(700, 100)", mobile: "translate(80, 375)" },
+        marks:{
+            "sgpa":[8.29 , 7.95 , 8.93 , 9.29, 9.52, 9.37, 9.50]
+        }
     }
 ]
 

@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import './education.css';
-import { educationData, educationIcons } from '../../assets/Data/Education_Data';
+import React, { useEffect, useState } from "react";
+import "./education.css";
+import {
+  educationData,
+  educationIcons,
+} from "../../assets/Data/Education_Data";
 
 const Education = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -14,12 +17,11 @@ const Education = () => {
     checkScreenSize();
 
     // Event listener for resizing
-    window.addEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
 
     // Cleanup
-    return () => window.removeEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
-
 
   const DesktopVersion = () => (
     <div className="education-container dark-theme">
@@ -52,7 +54,12 @@ const Education = () => {
               </text>
               <foreignObject x="-50" y="100" width="200" height="30">
                 <text x="0" y="90" className="badge">
-                  {item.result}
+                  {item.marks?.sgpa
+                    ? `CGPA: ${(
+                        item.marks.sgpa.reduce((a, b) => a + b, 0) /
+                        item.marks.sgpa.length.toFixed(2)
+                      ).toFixed(2)}`
+                    : item.result}
                 </text>
               </foreignObject>
             </g>
@@ -70,7 +77,6 @@ const Education = () => {
           {/* Curved Arrow from School 2 to School 3 */}
           <path
             d="M445,175 C520,110 610,125 652,92"
-
             fill="none"
             className="arrow-path"
             markerEnd="url(#arrowhead-default)"
@@ -78,7 +84,6 @@ const Education = () => {
 
           {/* Arrowhead definitions */}
           <defs>
-
             <marker
               id="arrowhead-60"
               markerWidth="10"
@@ -100,23 +105,22 @@ const Education = () => {
             >
               <path d="M0,0 Q10,3.5 0,7" fill="#bb86fc" className="arrowhead" />
             </marker>
-
           </defs>
         </svg>
       </div>
     </div>
-  )
+  );
 
   const MobileVersion = () => (
     <div className="timeline-wrapper-mobile">
-      <svg width="100%" height="550" viewBox="0 0 400 550" className="mobile-timeline">
-
+      <svg
+        width="100%"
+        height="550"
+        viewBox="0 0 400 550"
+        className="mobile-timeline"
+      >
         {educationData.map((item, i) => (
-          <g
-            key={i}
-            className="school-item"
-            transform={item.position.mobile}
-          >
+          <g key={i} className="school-item" transform={item.position.mobile}>
             <foreignObject x="-40" y="-45" width="120" height="120">
               <div className="outher-glass-effect">
                 <div className="glass-icon-wrapper">
@@ -127,7 +131,9 @@ const Education = () => {
 
             {item?.mobile_title.map((title, index) => (
               <text x="0" y="50" className="school-name">
-                <tspan x="0" dy={index * 20}>{title}</tspan>
+                <tspan x="0" dy={index * 20}>
+                  {title}
+                </tspan>
               </text>
             ))}
 
@@ -137,7 +143,12 @@ const Education = () => {
 
             <foreignObject x="-65" y="100" width="200" height="30">
               <text x="0" y="90" className="badge">
-                {item.result}
+                {item.marks?.sgpa
+                  ? `CGPA: ${(
+                      item.marks.sgpa.reduce((a, b) => a + b, 0) /
+                      item.marks.sgpa.length.toFixed(2)
+                    ).toFixed(2)}`
+                  : item.result}
               </text>
             </foreignObject>
           </g>
@@ -158,7 +169,6 @@ const Education = () => {
           markerEnd="url(#mobile-arrowhead)"
         />
 
-
         <defs>
           <marker
             id="mobile-arrowhead"
@@ -178,11 +188,11 @@ const Education = () => {
 
   return (
     <div className="education-container dark-theme">
-      <h2 >Education Journey</h2>
+      <h2>Education Journey</h2>
       <div className="timeline-wrapper">
         {isMobile ? <MobileVersion /> : <DesktopVersion />}
       </div>
     </div>
   );
 };
-export default Education; 
+export default Education;
