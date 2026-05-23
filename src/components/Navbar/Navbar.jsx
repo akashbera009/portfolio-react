@@ -22,7 +22,7 @@ const DesktopNavbar = () => {
         return () => document.removeEventListener('click', handleClickOutside);
     }, []);
 
-    const resumeLink = 'https://drive.google.com/file/d/1EZizpa3drJaEfgDvpqUNJt_oJ49KowZI/view?usp=drive_link';
+    const resumeLink = 'https://drive.google.com/file/d/1PvchcbK36TICD5mPDzyRulxORw7Ox2MQ/view?usp=sharing';
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = resumeLink;

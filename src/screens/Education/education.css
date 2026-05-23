@@ -7,7 +7,7 @@
   /* padding: 2rem; */
   /* max-width: 1200px; */
   /* max-height:50vh ; */
-  overflow: hidden;
+  overflow: visible; /* allow popup cards to overflow upward */
   margin: 0 auto;
   /* background-color: rebeccapurple; */
 }
@@ -33,6 +33,11 @@
 .timeline-svg {
   display: block;
   margin: 0 auto;
+  overflow: visible; /* allow popup cards to escape the SVG box */
+}
+
+.mobile-timeline {
+  overflow: visible;
 }
 
 .school-circle {
@@ -135,12 +140,120 @@
   .education-container {
     padding: 1rem;
   }
-  
+
   .timeline-svg {
     transform: scale(0.8);
     transform-origin: center;
   }
-}   
+}
+
+/* ---------- Google-Maps-style hover/tap popup ---------- */
+
+.popup-foreign {
+  overflow: visible;
+  pointer-events: none; /* card is purely informational; hover/tap goes to icon */
+}
+
+.education-popup {
+  position: relative;
+  width: 220px;
+  background: rgba(22, 27, 34, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(100, 150, 255, 0.12);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px) scale(0.96);
+  transform-origin: bottom center;
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0s linear 0.18s;
+  pointer-events: none;
+  font-family: inherit;
+}
+
+.education-popup.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0s linear 0s;
+}
+
+.popup-image {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1f2937, #0d1117);
+}
+
+.popup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.popup-body {
+  padding: 8px 12px 10px;
+}
+
+.popup-name {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f0f6fc;
+  line-height: 1.25;
+}
+
+.popup-info {
+  margin: 0 0 6px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #9198a1;
+}
+
+.popup-year {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  color: #4493f8;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.popup-tip {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background: rgba(22, 27, 34, 0.96);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .education-popup {
+    width: 180px;
+  }
+  .popup-image {
+    height: 70px;
+  }
+  .popup-name {
+    font-size: 12px;
+  }
+  .popup-info {
+    font-size: 10px;
+  }
+}
 
 
 /* Mobile-specific styles */

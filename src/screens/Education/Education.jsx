@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./education.css";
 import {
   educationData,
@@ -7,6 +7,8 @@ import {
 
 const Education = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [activeId, setActiveId] = useState(null);
+  const rootRef = useRef(null);
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -22,6 +24,53 @@ const Education = () => {
     // Cleanup
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
+
+  // On mobile, close the popup when the user taps outside the timeline.
+  useEffect(() => {
+    if (activeId === null) return;
+    const handleDocPointer = (e) => {
+      if (rootRef.current && !rootRef.current.contains(e.target)) {
+        setActiveId(null);
+      }
+    };
+    document.addEventListener("mousedown", handleDocPointer);
+    document.addEventListener("touchstart", handleDocPointer);
+    return () => {
+      document.removeEventListener("mousedown", handleDocPointer);
+      document.removeEventListener("touchstart", handleDocPointer);
+    };
+  }, [activeId]);
+
+  const getIconHandlers = (id) =>
+    isMobile
+      ? {
+          onClick: (e) => {
+            e.stopPropagation();
+            setActiveId((cur) => (cur === id ? null : id));
+          },
+        }
+      : {
+          onMouseEnter: () => setActiveId(id),
+          onMouseLeave: () => setActiveId(null),
+        };
+
+  const PopupCard = ({ item }) => (
+    <div
+      className={`education-popup ${activeId === item.type ? "is-open" : ""}`}
+    >
+      {item.image && (
+        <div className="popup-image">
+          <img src={item.image} alt={item.title} />
+        </div>
+      )}
+      <div className="popup-body">
+        <h3 className="popup-name">{item.title}</h3>
+        {item.info && <p className="popup-info">{item.info}</p>}
+        <p className="popup-year">{item.year}</p>
+      </div>
+      <span className="popup-tip" aria-hidden="true" />
+    </div>
+  );
 
   const DesktopVersion = () => (
     <div className="education-container dark-theme">
@@ -40,7 +89,10 @@ const Education = () => {
               transform={item.position.desktop}
             >
               <foreignObject x="-40" y="-45" width="140" height="140">
-                <div className="glass-icon-wrapper">
+                <div
+                  className="glass-icon-wrapper"
+                  {...getIconHandlers(item.type)}
+                >
                   {educationIcons[item.type]}
                 </div>
               </foreignObject>
@@ -106,6 +158,25 @@ const Education = () => {
               <path d="M0,0 Q10,3.5 0,7" fill="#bb86fc" className="arrowhead" />
             </marker>
           </defs>
+
+          {/* Popup pass — drawn last so cards always layer above icons & arrows */}
+          {educationData.map((item, i) => (
+            <g
+              key={`popup-${i}`}
+              className="popup-layer"
+              transform={item.position.desktop}
+            >
+              <foreignObject
+                x="-110"
+                y="-230"
+                width="220"
+                height="180"
+                className="popup-foreign"
+              >
+                <PopupCard item={item} />
+              </foreignObject>
+            </g>
+          ))}
         </svg>
       </div>
     </div>
@@ -123,7 +194,10 @@ const Education = () => {
           <g key={i} className="school-item" transform={item.position.mobile}>
             <foreignObject x="-40" y="-45" width="120" height="120">
               <div className="outher-glass-effect">
-                <div className="glass-icon-wrapper">
+                <div
+                  className="glass-icon-wrapper"
+                  {...getIconHandlers(item.type)}
+                >
                   {educationIcons[item.type]}
                 </div>
               </div>
@@ -182,12 +256,31 @@ const Education = () => {
             <path d="M0,0 Q10,3.5 0,7" fill="#bb86fc" className="arrowhead" />
           </marker>
         </defs>
+
+        {/* Popup pass for mobile */}
+        {educationData.map((item, i) => (
+          <g
+            key={`popup-${i}`}
+            className="popup-layer"
+            transform={item.position.mobile}
+          >
+            <foreignObject
+              x="-90"
+              y="-210"
+              width="180"
+              height="170"
+              className="popup-foreign"
+            >
+              <PopupCard item={item} />
+            </foreignObject>
+          </g>
+        ))}
       </svg>
     </div>
   );
 
   return (
-    <div className="education-container dark-theme">
+    <div className="education-container dark-theme" ref={rootRef}>
       <h2>Education Journey</h2>
       <div className="timeline-wrapper">
         {isMobile ? <MobileVersion /> : <DesktopVersion />}
