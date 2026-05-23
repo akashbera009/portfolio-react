@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"Stop\",\"additionalContext\":\"Reminder: update /Users/admin/Downloads/portfolio-react/state.md if you completed any tasks listed there this turn — check off boxes, update the '\\''Last updated'\\'' date, and note any new open questions or blockers.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}

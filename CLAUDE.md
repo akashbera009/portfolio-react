@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 The goal is a futuristic, premium, and interactive developer portfolio utilizing glassmorphism, AI-inspired glow effects, and a modular reusable card system.
 Reference Design: [Lehar Sindra Portfolio](https://leharsindra.framer.website/#about-me)
 
+## Working state: `state.md`
+
+The repo has a `state.md` at the root that tracks the current multi-turn initiative — what's been decided, the task checklist, what's done, what's blocked. **Read it at the start of any session** to pick up where the last one left off. **Update it whenever you complete a task** (check off the box, add a "Last updated" date). A Stop hook in `.claude/settings.json` reminds you to do this after each turn. The detailed approved plan lives at `/Users/admin/.claude/plans/ok-we-will-do-silly-dolphin.md` (read-only reference).
+
 ## Common Commands
 
 - Develop: `npm run dev` (Vite serves on `0.0.0.0:3000` — see `vite.config.js`)
@@ -19,13 +23,17 @@ There is no test runner configured.
 ## Architecture
 
 - **Framework**: React 18 + Vite 8 (JSX, no TypeScript). Entry: `src/main.jsx` → `src/App.jsx`.
-- **Page composition is data-driven.** `src/App.jsx` does not import section components directly. It reads `src/assets/Data/Sections_Data.jsx`, filters by `isActive`, sorts by `order`, and renders each section wrapped in a `framer-motion` div with an `id` matching the section key (used by `Navbar` anchor links). To add, reorder, hide, or remove a page section, edit `Sections_Data.jsx` — don't wire components into `App.jsx`.
-- **Two component roots, by role:**
-  - `src/screens/` — full page sections (About, Education, Skills, Projects, Experience, Achievements, Hobbies, Contact). Each is a self-contained section rendered by the registry above.
-  - `src/components/` — reusable/layout pieces (`Navbar`, `Header`, `Footer`, `LoadingScreen`, `Modal`, `ImageSlideShow`, `Cards`, `SendMailjetEmail`).
-- **Section content lives in `src/assets/Data/`** as JSX modules (`About_Section_Data.jsx`, `Project_Data.jsx`, `Experience_Data.jsx`, etc.). Screens import these rather than hard-coding their content, so copy/data updates happen in `Data/` not in the screen components.
-- **Theme** is a single `ThemeContext` (`src/assets/ThemeContext.jsx`) providing `{ isDarkMode, toggleTheme }`, wrapping the entire app in `App.jsx`. Defaults to dark mode. Color tokens are referenced inline (e.g. `#0d1117` for dark bg, `#f0f6fc` for primary text) and also catalogued in `README.md` and `src/assets/themeColour.jsx`.
-- **Loading flow**: `App.jsx` mounts `LoadingScreen` first; it calls `onComplete` to flip to `MainContent`.
+- **Two coexisting site versions, routed by URL.** `src/App.jsx` is a thin `BrowserRouter` shell: `/` lazy-loads `V1Root` (the production site), `/v2` lazy-loads `V2Root` (in-progress redesign). Both roots are `React.lazy` imports so visitors on `/` never download v2 code and vice versa (verified via `npm run build` chunk output). Unknown paths redirect to `/`. `Suspense` fallback is the shared `LoadingScreen`.
+- **Three top-level source trees:**
+  - **`src/v1/`** — the production site. Self-contained: own `Navbar`, `ThemeContext` (exposes `{ isDarkMode, toggleTheme }`), section components, and `Sections_Data.jsx` registry. `V1Root.jsx` runs the loading flow then renders sections from the registry. v1 looks byte-identical to `main`.
+  - **`src/v2/`** — the redesign. Self-contained: own `Navbar`, `ThemeContext` (exposes `{ isDarkMode, toggleTheme, activeTheme }` — `activeTheme` comes from `src/v2/theme/theme.js`), v2-specific card components (`GlassCard`, `ProjectCard`, `SpotlightCard`, `TraitCard`), and v2 screen components. `V2Root.jsx` hand-composes the section list (no registry). Visible "V2" dev badge top-right.
+  - **`src/shared/`** — truly cross-version infrastructure imported by both v1 and v2:
+    - `components/LoadingScreen/` (Suspense fallback)
+    - `components/Modal/`, `components/ImageSlideShow/`
+    - `assets/Data/` — portfolio content (About, Experience, Projects, etc.). Editing a Data file updates both v1 and v2 in one place. v2-only data (`Traits_Data.jsx`) lives in `src/v2/assets/Data/`.
+- **Section registry is v1-only.** Adding/reordering/hiding a section in v1: edit `src/v1/assets/Data/Sections_Data.jsx`. v2 doesn't use a registry — `V2Root` hand-imports each section. Sections v2 hasn't redesigned yet (Education, Achievements) are borrowed from `src/v1/screens/` and wrapped in v1's `ThemeProvider` inside `V2Root` (marked `borrowed: true` in the section list, with TODO comment).
+- **Deploy**: Vercel with `vercel.json` SPA rewrite (`/(.*)` → `/index.html`) so cold-loading `/v2` works. No GH-Pages config (the old `gh-pages` deploy script was removed; `gh-pages` devDep is harmless and can be uninstalled when convenient).
+- **Branch flow**: v2 work lands on `v2/dev`. Feature branches off `v2/dev`. When v2 is ready, `v2/dev` merges into `main`, shipping both v1 (at `/`) and v2 (at `/v2`) together.
 
 ## Styling
 

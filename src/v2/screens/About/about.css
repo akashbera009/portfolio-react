@@ -1,0 +1,951 @@
+.about-main {
+  /* min-height: 100vh; */
+}
+
+.grid {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #3a33fe2b 1px, transparent 1px),
+    linear-gradient(to bottom, #1f57ff4c 1px, transparent 1px);
+  background-size: 100px 100px;
+  /* background-color: red; */
+}
+
+/* .about-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: transparent;
+  } */
+
+.about-container {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: #666; */
+}
+
+.left-side {
+  position: relative;
+  top: 1.5rem;
+  margin-left: 10%;
+  flex: 1.3;
+  padding-right: 30px;
+  /* background-color: #3366cc ; */
+  justify-content: center;
+
+}
+
+.left-side h1 {
+  color: #4493f8;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  line-height: 1.2;
+}
+
+.left-side p {
+  font-size: 1.25rem;
+  margin-left: 10%;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.note {
+  font-style: italic;
+  /* color: #666; */
+  margin-top: 20px;
+}
+
+.links {
+  margin-top: 30px;
+}
+
+
+.links a:hover {
+  color: #3366cc;
+  /* Slightly darker blue on hover */
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: #3366cc; */
+}
+
+.profile-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  width: 250px;
+  /* Adjust this for a nice balanced image size */
+  filter: brightness(95%);
+  margin-left: 1rem;
+  /* gap: 1rem; */
+
+  /* box-shadow: -10px 10px 30px #0051ff69; */
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .left-side {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .profile-image {
+    width: 200px;
+    /* Adjust the size for smaller screens */
+  }
+
+  .links a {
+    margin-right: 15px;
+  }
+}
+
+
+/* Container for the buttons */
+.button-container {
+  display: flex;
+  gap: 30px;
+  /* Space between buttons */
+  justify-content: center;
+  /* Center buttons horizontally */
+  margin-top: 10%;
+  /* Space above the buttons */
+}
+
+
+/* From Uiverse.io by imtausef */
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 15px;
+  text-decoration: none;
+  /* box-shadow:
+    inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1); */
+}
+
+.tooltip-profile {
+  width: 100%;
+  background: #2a2b2f;
+  border-radius: 10px 15px;
+  padding: 10px;
+  border: 1px solid #5865f2;
+}
+
+.tooltip-container:hover .tooltip {
+  top: -150px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.tooltip-icon {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+
+.layer {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+
+.tooltip-icon:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.layer span,
+.tooltip-text {
+  color: #5865f2;
+  border-color: #5865f2;
+}
+
+.tooltip-icon:hover.layer span {
+  box-shadow: -1px 1px 3px #5865f2;
+}
+
+.tooltip-icon .tooltip-text {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition:
+    bottom 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.tooltip-icon:hover .tooltip-text {
+  bottom: -35px;
+  opacity: 1;
+}
+
+.tooltip-icon:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.tooltip-icon:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+.tooltip-icon:hover .layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+
+.tooltip-icon:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+
+.tooltip-icon:hover .layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+
+.layer span.fab {
+  font-size: 30px;
+  line-height: 64px;
+  text-align: center;
+  fill: #5865f2;
+  background: #000;
+  /* background-color: red; */
+  box-shadow: -10px 10px 30px #0051ff69;
+
+}
+
+.tooltip-user {
+  display: flex;
+  gap: 10px;
+}
+
+.tooltip-img {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  border: 1px solid #5865f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #fff; */
+}
+
+.tooltip-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #5865f2;
+}
+
+.tooltip-username {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.tooltip-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  color: #fff;
+}
+
+.tooltip-about {
+  color: #ccc;
+  padding-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* .custom-button {
+  position: relative;
+  display: inline-block;
+  width: 150px; 
+  height: 50px; 
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  transition: transform 0.3s ease-in-out;
+  
+  box-shadow: -10px 10px 30px #0051ff69;
+}
+
+.custom-button .background {
+  position: absolute;
+  inset: 0;
+  background-color: #4493f8; 
+  border-radius: 8px; 
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+ 
+.custom-button .button-content {
+  position: relative;
+  z-index: 2;
+  border: 2px solid #4493f8; 
+  border-radius: 8px;  
+  padding: 0 16px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;  
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;  
+  color: white;
+  text-align: center;
+  transform: translate(-2px , -8px);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+ 
+.custom-button:hover .button-content {
+  transform: translate(-6px, -12px);  
+}
+ 
+.button-content.dark { 
+  background-color: black; 
+}
+.button-content.light { 
+  background-color: rgb(210, 210, 210); 
+}
+
+.custom-button:hover .background {
+  transform: scale(1);  
+} 
+.button-text {
+  color: white;
+  margin: 0; 
+  font-size: 1.1rem;  
+}
+.text-container{
+  width: 100%; 
+  display:  flex;
+  justify-content: space-around;
+  align-items:center ;
+}
+.button-text{
+  width: 100%; 
+  display:  flex;
+  justify-content: space-around;
+  align-items:center ;
+}
+.text-container p{
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+  text-decoration: none; 
+} */
+
+.hi-there {
+  color: rgba(255, 255, 255, 0.592);
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  animation: greetingFadeIn 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes greetingFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-0px, -50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.gmail-Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.gmail-svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: transparent; */
+
+  backdrop-filter: blur(20px);
+  background-color: #0000ff11;
+  background-color: rgba(156, 156, 156, 0.466);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.gmail-svgContainer:hover {
+  transform: scale(1.1);
+}
+
+.gmail-svgContainer svg {
+  position: relative;
+  /* top: 10%; */
+}
+
+.about-blob2 {
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle 70px at 0% 100%,
+      #3fe9ff,
+      #0000ff80,
+      transparent);
+  box-shadow: -10px 10px 30px #0051ff69;
+}
+
+.intro-name-desk {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.name-desk {
+  font-size: 2rem;
+  color: #4493f8;
+  /* background-color: red; */
+}
+
+.big_name {
+  font-size: 2rem;
+  color: #d0def1;
+  margin-left: 1rem;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* background-color: red; */
+}
+
+.intro-img-desk {
+  position: relative;
+  /* z-index: inherit; */
+  height: 4rem;
+}
+
+.intro-desk {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background: linear-gradient(90deg, #4493f8, #665af0, #4493f8);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-shift11 1.5s linear infinite;
+  line-height: 1.4;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@keyframes gradient-shift11 {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.descrip-desk {
+  color: #aaa;
+  position: relative;
+  text-align: center;
+  font-family: cursive;
+  width: 100%;
+}
+
+
+
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .profile-image {
+    margin-left: 0;
+  }
+
+  .profile-container {
+    /* max-width: 400px; */
+    margin: 0 auto;
+    padding: 20px 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .mobile-grid {
+    /* position: absolute; */
+    z-index: 0;
+    inset: 0;
+    height: 100%;
+    /* width: 100%; */
+    background-image: linear-gradient(to right, #3a33fe2b 1px, transparent 1px),
+      linear-gradient(to bottom, #1f57ff4c 1px, transparent 1px);
+    background-size: 100px 100px;
+    /* background-color: red; */
+  }
+
+  /* Top-left greeting */
+  .greeting {
+    position: absolute;
+    top: -40px;
+    left: 26px;
+    font-size: 7rem;
+    font-weight: 700;
+    color: #aaaaaa67;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+    transform: translate(-50px, -50px);
+    animation: greetingFadeIn 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes greetingFadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(-50px, -50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  /* Image styling */
+  .profile-image-wrapper {
+    /* margin-top: 60px; */
+    width: 250px;
+    height: 400px;
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
+    object-fit: contain;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Name */
+  .name {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #665af0;
+    color: #4493f8;
+  }
+
+  /* Intro paragraph */
+  .intro {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+
+    background: linear-gradient(90deg, #4493f8, #665af0, #4493f8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-shift11 1.5s linear infinite;
+    transition: all 1s ease-out;
+
+    line-height: 1.4;
+    font-weight: 900;
+    max-width: 320px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  /* Container */
+  .intro-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* Text: “I’m” */
+  .name {
+    font-size: 2rem;
+    font-weight: 700;
+    /* color: #ffffff; */
+    animation: slideFadeLeft 1s ease-in-out;
+  }
+
+  /* Image animation */
+  .intro-img {
+    height: 4rem;
+    margin-bottom: -0.5rem;
+    margin-top: -0.5rem;
+    animation: slideFadeRight 3s ease-in-out;
+  }
+
+  /* Animations */
+  @keyframes slideFadeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* 100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  } */
+  }
+
+  @keyframes slideFadeRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* 100% {
+    opacity: 0;
+    transform: translateX(20px);
+  } */
+  }
+
+  @keyframes gradient-shift11 {
+    0% {
+      background-position: 0% center;
+    }
+
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  .desc {
+    color: #aaa;
+    margin: 0 auto;
+    text-align: center;
+    font-size: small;
+    font-family: fantasy;
+  }
+
+  .intro-img {
+    margin-top: 1rem;
+    height: 4rem;
+    margin-bottom: -.5rem;
+    margin-top: -.5rem;
+  }
+
+  .intro-name {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-about-btn-grp {
+    display: flex;
+    gap: 1.5rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .Download-button {
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 20px;
+    color: #ffffffd2;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    /* dark bg */
+    border: 1px solid #4493f8;
+    box-shadow: 0 0.7em 1.5em -0.5em rgba(68, 147, 248, 0.25);
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .Download-button svg {
+    margin-right: 8px;
+    width: 25px;
+    stroke: #149CEA;
+    stroke-width: 2;
+  }
+
+  .Download-button:hover {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    /* subtle reverse */
+    box-shadow: 0 0.5em 1.5em -0.3em rgba(100, 149, 237, 0.35);
+    /* bluish glow */
+    transform: scale(1.03);
+  }
+
+  .Download-button:active {
+    box-shadow: 0 0.3em 1em -0.3em rgba(100, 149, 237, 0.3);
+    transform: scale(0.98);
+  }
+
+  .Download-button::before,
+  .Download-button::after {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: #149CEA;
+    position: absolute;
+    border-radius: 5px;
+    transition: all 0.2s;
+    opacity: 0.7;
+  }
+
+  .Download-button::before {
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .Download-button::after {
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .Download-button:hover::before,
+  .Download-button:hover::after {
+    height: 60%;
+    opacity: 1;
+  }
+
+
+  .mobile-about-button {
+    cursor: pointer;
+    font-size: .85rem;
+    border-radius: 16px;
+    border: none;
+    padding: 2px;
+    background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
+    position: relative;
+  }
+
+  .mobile-about-button::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 60%;
+    border-radius: 120px;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 20px #ffffff38;
+    z-index: -1;
+  }
+
+  .mobile-about-blob1 {
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    border-radius: 16px;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle 60px at 0% 100%,
+        #3fe9ff,
+        #0000ff80,
+        transparent);
+    box-shadow: -10px 10px 30px #0051ff2d;
+  }
+
+  .mobile-about-inner {
+    padding: 8px 25px;
+    border-radius: 14px;
+    color: #fff;
+    z-index: 3;
+    position: relative;
+    background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);
+  }
+
+  .mobile-about-inner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 14px;
+    background: radial-gradient(circle 60px at 0% 100%,
+        #00e1ff1a,
+        #0000ff11,
+        transparent);
+    position: absolute;
+  }
+
+  /* From Uiverse.io by vinodjangid07 */
+  .gmail-Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  .gmail-svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: transparent; */
+    backdrop-filter: blur(20px);
+    background-color: #0000ff11;
+    background-color: rgba(156, 156, 156, 0.466);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+
+  .gmail-BG2 {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* subtle Gmail-style red gradient: from lighter to deeper red */
+    background: linear-gradient(135deg, #ea4335 0%, #d93025 100%);
+
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+
+
+  .gmail-Btn:hover .gmail-BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+
+  .gmail-Btn:hover .gmail-svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+  }
+
+}
+
+
+
+
+@media (max-width: 350px) {
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+
+  .desc {
+    color: #aaa;
+  }
+
+  .profile-image-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+}

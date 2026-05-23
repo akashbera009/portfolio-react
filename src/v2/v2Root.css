@@ -1,0 +1,24 @@
+/* V2Root chrome — minimal, just the dev badge for now.
+   v2 screens carry their own styling. */
+
+.v2-root {
+  position: relative;
+  min-height: 100vh;
+}
+
+.v2-dev-badge {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #0d1117;
+  background: linear-gradient(135deg, #4493f8, #bb86fc);
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(187, 134, 252, 0.4);
+  user-select: none;
+  pointer-events: none;
+}
