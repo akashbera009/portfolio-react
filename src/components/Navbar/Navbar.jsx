@@ -18,7 +18,7 @@ const DesktopNavbar = () => {
         { id: 'contact', label: 'Contact' },
     ];
 
-    const resumeLink = 'https://drive.google.com/file/d/1EZizpa3drJaEfgDvpqUNJt_oJ49KowZI/view?usp=drive_link';
+    const resumeLink = 'https://drive.google.com/file/d/1PvchcbK36TICD5mPDzyRulxORw7Ox2MQ/view?usp=sharing';
 
     const handleToggle = () => setOpen(!open);
 
@@ -32,6 +32,15 @@ const DesktopNavbar = () => {
         document.addEventListener('click', handleClickOutside);
         return () => document.removeEventListener('click', handleClickOutside);
     }, []);
+
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = resumeLink;
+        link.setAttribute('download', 'Resume.pdf'); // Custom filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     useEffect(() => {
         const sections = document.querySelectorAll('section');
@@ -160,9 +169,9 @@ const MobileNavbar = () => {
                 </a>
                 <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12" /></svg>
                     ) : (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
                     )}
                 </button>
                 {isMenuOpen && (
